@@ -148,6 +148,60 @@
             transform: translateY(0%);
         }
     }
+    /* Responsividade para Tablets e Celulares */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column; /* Empilha logo e menu */
+        gap: 10px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap; /* Permite que os links quebrem linha se necessário */
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 10px; /* Reduz o espaçamento lateral */
+    }
+
+    .navbar ul li a {
+        font-size: 16px; /* Diminui a fonte do menu */
+    }
+
+    .home {
+        flex-direction: column-reverse; /* Imagem em cima, texto embaixo */
+        justify-content: center;
+        text-align: center;
+        padding: 100px 5% 20px;
+        height: auto; /* Permite que a página cresça verticalmente */
+    }
+
+    .home-info h1 {
+        font-size: 35px; /* Diminui o nome */
+    }
+
+    .home-info h2 {
+        font-size: 22px;
+    }
+
+    .home-img .img-box {
+        width: 250px; /* Tamanho fixo para não sumir no mobile */
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajuste fino para celulares muito pequenos */
+@media (max-width: 450px) {
+    .navbar .logo {
+        font-size: 24px;
+    }
+    
+    .navbar ul li a {
+        font-size: 14px;
+    }
+}
 
 
 </style>
@@ -159,6 +213,7 @@
             <li><a href="#">About</a></li>
             <li><a href="https://alex-olivrodeenoque-7b5127.netlify.app/" target="_blank">O Livro de Enoque</a></li>
             <li><a href="https://epic-fury-876b2c.netlify.app/" target="_blank">Epic Fury</a></li>
+            <li><a href="https://alexcorvete.github.io/The-Marked-Knight/" target="_blank">The Marked Knight</a></li>
         </ul>
     </nav>
     <div class="bars-animation">
